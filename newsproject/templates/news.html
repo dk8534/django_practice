@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{city}} News Page</title>
+    <link rel="stylesheet" href="{% static 'css/news.css' %}">
+</head>
+<body>
+    {% if type == 'aligarh' %}
+    <h1>{{head_msg}}</h1>
+    <ol>
+        <li>{{n1}}</li><br>
+        <img src="{% static 'images/aligarh/n1.avif' %}" alt="Sorry! image not loaded, try again " height="400 px" width="400px">
+        <li>{{n2}}</li><br>
+        <img src="{% static 'images/aligarh/n2.avif' %}" alt="Sorry! image not loaded, try again" height="400 px" width="400px">
+        <li>{{n3}}</li><br>
+        <img src="{% static 'images/aligarh/n3.avif' %}" alt="Sorry! image not loaded, try again" height="400 px" width="400px">
+        <li>{{n4}}</li><br>
+        <img src="{% static 'images/aligarh/n4.avif' %}" alt="Sorry! image not loaded, try again" height="400 px" width="400px">
+        <li>{{n5}}</li><br>
+        <img src="{% static 'images/aligarh/n5.avif' %}" alt="Sorry! image not loaded, try again"height="400 px" width="400px">
+    </ol>
+    {% elif type == 'noida' %}
+    <h1>{{head_msg}}</h1>
+    <ol>
+        <li>{{n1}}</li><br>
+        <img src="{% static 'images/noida/n4.jpg' %}" alt="Sorry! image not loaded, try again " height="400 px" width="400px">
+        <li>{{n2}}</li><br>
+        <img src="{% static 'images/noida/n3.avif' %}" alt="Sorry! image not loaded, try again " height="400 px" width="400px">
+        <li>{{n3}}</li><br>
+        <img src="{% static 'images/noida/n5.webp' %}" alt="Sorry! image not loaded, try again " height="400 px" width="400px">
+        <li>{{n4}}</li><br>
+        <img src="{% static 'images/noida/n3.avif' %}" alt="Sorry! image not loaded, try again " height="400 px" width="400px">
+        <li>{{n5}}</li><br>
+        <img src="{% static 'images/noida/n1.avif' %}" alt="Sorry! image not loaded, try again " height="400 px" width="400px">
+    </ol>
+    {% elif type == 'delhi' %}
+    <h1>{{head_msg}}</h1>
+    <ol>
+        <li>{{n1}}</li><br>
+        <img src="{% static 'images/delhi/n1.avif' %}" alt="Sorry! image not loaded, try again " height="400 px" width="400px">
+        <li>{{n2}}</li><br>
+        <img src="{% static 'images/delhi/n2.avif' %}" alt="Sorry! image not loaded, try again " height="400 px" width="400px">
+        <li>{{n3}}</li><br>
+        <img src="{% static 'images/delhi/n4.avif' %}" alt="Sorry! image not loaded, try again " height="400 px" width="400px">
+        <li>{{n4}}</li><br>
+        <img src="{% static 'images/delhi/n3.avif' %}" alt="Sorry! image not loaded, try again " height="400 px" width="400px">
+        <li>{{n5}}</li><br>
+        <img src="{% static 'images/delhi/n5.avif' %}" alt="Sorry! image not loaded, try again " height="400 px" width="400px">
+    </ol>
+    {% endif %}
+</body>
+</html>

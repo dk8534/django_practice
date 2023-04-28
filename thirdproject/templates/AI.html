@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static file Demo</title>
+</head>
+<body>
+    <h1>Hello Friend! This an image of AI </h1>
+    <h2>New released AI Chat bots:</h2>
+    <ol>
+        <li>{{b1}}</li>
+        <li>{{b2}}</li>
+        <li>{{b3}}</li>
+        <li>{{b4}}</li>
+        <li>{{b5}}</li>
+        <li>{{b6}}</li>
+        <li>{{b7}}</li>
+        <li>{{b8}}</li>
+        <li>{{b9}}</li>
+        <li>{{b10}}</li>
+    </ol>
+    <img src="{% static 'images/AI.jpeg' %}" alt="Sorry! image not found,check internet connection">
+</body>
+</html>
