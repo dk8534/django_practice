@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>django_form</title>
+</head>
+<body>
+    <h1>This is django_form</h1>
+    <form action="" method="post">
+        <!-- Yes, there are several other methods available in Django forms to render a form as different HTML elements:
+
+        as_table(): Renders the form as a HTML table.
+        as_ul(): Renders the form as an unordered list (<ul> element).
+        as_p(): Renders the form as a series of paragraphs (<p> elements). -->
+            
+        <!-- {{ form.as_ul }} -->
+        <!-- {{ form.as_table}} -->
+        {{ form.as_p}}
+        <input type="button" value="submit">
+    </form>
+</body>
+</html>
